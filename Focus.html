@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/assets/dcode.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+   
+ 
+</head>
+<style>
+    .form input:focus{
+        background-color: red;
+                
+    }
+</style>
+<body>
+    <form class="form" id="myForm">
+        <label for="yt_username">Username</label>
+        <input type="text" id="yt_ussername" placeholder="focus event"> 
+        <label for="yt_password">Password</label>
+        <input type="password" id="yt_password" placeholder="focus event"><br>
+        <button type="submit">Login</button>
+    </form>
+    <script>
+        //  timeout
+
+        // const inpPassword = document.getElementById("yt_password");
+        // setTimeout(() =>{
+        //     inpPassword.focus();
+        // }, 3000);
+
+        // Focus-event
+        const inpPassword = document.getElementById("yt_password");
+        inpPassword.addEventListener('focus',() =>{
+            console.log("Password field has focus");
+
+        });
+
+
+
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,20 @@
+1.4 Explain jwt in approx and prove its top 3 benifits
+
+1. Jwt is combination of header, payload and signature.
+2. It is a method of securely transfering a data between two parties.
+3. Jwt uses a public key and private key for encryption and decryption of the data.
+4. It is a method which symmetrically signed by a shared secret key by using a private key.
+5. We use to for authentication such as in website or mobile applications.
+6. This method may have build in expiry machanism as per demand 
+
+Benifits
+
+1. To authenticate a user, a client  application must send a JSON web token(JWT) in the authorization header of the HTTP 
+request to your backend API.API gateway validates the token on the behalf of your api, so you dont have to add any code
+in your api to process the authentication
+
+2. The use of the tokens has many benifits compared to traditional method such as cookies. tokens are stateless. the token
+is self-contained and contains all the information it needs for authentication.
+
+3. Can be used across services and specifically be isolated in an authorization micro - service that can create these tokens
+the rest of the microsrvices can just have the public key to verify the signature of the tokens 
